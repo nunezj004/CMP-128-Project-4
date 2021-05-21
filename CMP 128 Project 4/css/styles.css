@@ -1,0 +1,134 @@
+/*
+Author: Jose Nunez
+Date: 5/14/21
+Date Modified: 5/20/21
+*/
+
+/* Start of CSS shared by all pages*/
+body{
+    margin: 0px;
+}
+header{
+    height: 100px;
+    width: 90%;
+    background-color: rgb(10,64,125);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    padding: 10px;
+}
+#navbar li :hover{
+    text-decoration: underline;
+}
+
+#buttons{
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+#buttons li{
+    list-style: none;
+    list-style:none;
+    text-align: center;
+    float: right;
+    padding-bottom: 2px;
+    padding-top: 8px;
+
+}
+
+footer{
+    height: 110px;
+    width: 100%;
+    background-color: rgb(22, 55, 103);
+    bottom: 0;
+    color: rgb(240, 240, 240);
+    padding-top: 20px;
+    font-size: 18px;
+    padding-left: 5%;
+}
+/* End of CSS shared by all pages*/
+
+/* Start of index CSS*/
+#main_container{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    font-size: 18px;
+    padding-bottom: 5%;
+}
+
+#profile_pic{
+    height: 250px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#square{
+    list-style-type: square;
+}
+
+#roman_list{
+    list-style-type: lower-roman;
+}
+/* End of index CSS*/
+
+/* Start of contact CSS */
+#contact_main_container{
+    padding: 13% 5% 13% 5% ;
+    font-size: 20px;
+}
+/* End of contact CSS */
+
+/* Start of Registration CSS*/
+#registration_main_container{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+form{
+    background-color: rgb(238, 238, 238);
+    width: 40%;
+    padding-bottom: 1%;
+    
+}
+
+.box{
+    width: 65%;
+    height: 23px;
+}
+
+#register{
+    width: 92%;
+    height: 35px;
+    background-color: rgb(63, 153, 247);
+    color: rgb(240, 240, 240);
+    border-style: none;
+}
+
+.dropdown{
+    width: 50%;
+    height: 30px;
+}
+
+.radios{
+    align-content: left;
+}
+
+#formErrors{
+    color:rgb(232, 50, 82);
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 3%;
+    padding-bottom: 3%;
+
+}
+/* End of Registration CSS*/
+

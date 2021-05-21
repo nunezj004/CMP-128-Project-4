@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <!--Linking the an external css file to the html-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <!-- 
+    Author: Jose Nunez
+    Date: 5/14/21
+    Date Modified: 5/20/21
+    -->
+
+    <body>
+        <!--Header used to display Lehman logo and navigation buttons -->
+        <header id = navbar>
+            <img src ="images/cs-logo.png" id = lehman_logo>
+            
+            <ul id = buttons>
+                <!--navigation buttons-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "registration.html">Register</a></li>
+                <li><a href = "contactus.html">Contact Us</a></li>
+            </ul>
+
+
+        </header>
+
+         <!--div being used to hold the main content of the website-->
+        <div id = registration_main_container>
+            <!--used a center tags to make the registration form centered-->
+            <center>
+                <!--registration form-->
+            <form action="" id = myForm>
+                
+                <h2>User Registration</h2>
+
+                <label>Full Name:</label> <br>
+                <input type="text" name = "fullname" id = "fullname" class = box> <br> <br>
+
+                <label>Email:</label> <br>
+                <input type="email" name = "email" id = email class = box> <br> <br>
+
+                <label>Phone Number: (nnn-nnn-nnnn)</label> <br>
+                <input type="tel" name = "phonenumber" id = phonenumber class = box> <br> <br>
+
+                <label>Organization:</label> <br>
+                <input type="text" name = "organization" id = organization class = box> <br> <br>
+
+                <label>Country:</label> <br>
+                <select name = "country" id = country class = dropdown>
+                    <option value="Select a Country">Select a Country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    
+                </select> <br> <br>
+                
+                <label>Registration Type:</label> <br>
+                <input type="radio" name = "registrationType" id = author class = radios value = author>
+                <label for="author">Author ($400)</label> <br>
+                <input type="radio"  name = "registrationType" id = participant  class = radios value = participant>
+                <label for="participant">Participant ($300)</label> <br>
+                <input type="radio"  name = "registrationType" id = student class = radios value= student>
+                <label for="student">Student ($100)</label><br><br>
+
+                <label>Discount Code: Enter code "Lehman College" for 50% off</label> <br>
+                <input type="text" name = "discount" id = discount class = box> <br> <br>
+
+                <label>Password:</label> <br>
+                <input type="password" name = "password" id = password class = box> <br> <br>
+
+                <label>Confirm Password:</label> <br>
+                <input type="password" name = "Conf_password" id = Conf_password class = box> <br> <br>
+
+                <!--div that holds the list of errors-->
+                <div id = "formErrors"> 
+
+                   <ul>
+                        <li id="name_error" style="visibility: hidden;">Missing full name.</li>
+                        <li id="email_error" style="visibility: hidden;">Invalid or missing email address.</li>
+                        <li id="password_error" style="visibility: hidden;">Missing Password.</li>
+                        <li id="Conf_password_error" style="visibility: hidden;">Missing Password Confirmation.</li>
+                        <li id="password_not10-20" style="visibility: hidden;">Password must be between 10 and 20 characters.</li>
+                        <li id="password_no_lower" style="visibility: hidden;">Password must contain at least one lowercase character.</li>
+                        <li id="password_no_upper" style="visibility: hidden;">Password must contain at least one uppercase character.</li>
+                        <li id="password_no_digit" style="visibility: hidden;">Password must contain at least one digit.</li>
+                        <li id="password_dont_match" style="visibility: hidden;"> Password and confirmation password don’t match.</li>
+                        <li id="attendee_error" style="visibility: hidden;">Missing attendee organization.</li>
+                        <li id="country_error" style="visibility: hidden;">Missing attendee country.</li>
+                        <li id="phone_error" style="visibility: hidden;">Wrong phone number provided.</li>
+                        
+                    </ul> 
+                 
+                </div>
+
+                <input type="submit" value="Register" id = "register" onclick="return formValidation()">
+    
+
+            </form>
+            </center>
+        </div>
+
+        <!--footer used to hold basic information about the conference-->
+        <footer>
+            <p>15-16 July 2021 <br>
+                Lehman College 1St International Conference in Cloud Computing <br>
+                Bronx, NY
+            </p>
+
+        </footer>
+
+    </body>
+
+    <script src="js/errordetection.js"></script>
+</html>
